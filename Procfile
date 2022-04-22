@@ -1,1 +1,1 @@
-web: gunicorn petstagram.wsgi
+web: gunicorn --pythonpath petstagram main.wsgi
