@@ -13,8 +13,6 @@ class CreatePetForm(BootstrapFormMixin, forms.ModelForm):
         self._init_bootstrap_form_controls()
 
     def save(self, commit=True):
-        # commit false does not persist to database
-        # just returns the object to be created
         pet = super().save(commit=False)
 
         pet.user = self.user
