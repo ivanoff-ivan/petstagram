@@ -6,12 +6,6 @@ from django.db import models
 from petstagram.accounts.managers import PetstagramUserManager
 from petstagram.common.validators import validate_only_letters
 
-'''
-1. Create model extending ...
-2. Configure this model in settings.py
-3. Create user manager
-'''
-
 
 class PetstagramUser(auth_models.AbstractBaseUser, auth_models.PermissionsMixin):
     USERNAME_MAX_LENGTH = 25

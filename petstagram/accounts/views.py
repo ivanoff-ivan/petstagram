@@ -24,9 +24,6 @@ class UserLoginView(auth_views.LoginView):
         return super().get_success_url()
 
 
-# def edit_profile(request):
-#     return profile_action(request, EditProfileForm, 'profile details', get_profile(), 'main/profile_edit.html')
-#
 class EditProfileView:
     pass
 
@@ -60,6 +57,3 @@ class ProfileDetailsView(views.DetailView):
         })
 
         return context
-
-# def delete_profile(request):
-#     return profile_action(request, DeleteProfileForm, 'index', get_profile(), 'main/profile_delete.html')

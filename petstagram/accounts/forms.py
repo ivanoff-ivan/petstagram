@@ -10,15 +10,21 @@ class CreateProfileForm(BootstrapFormMixin, auth_forms.UserCreationForm):
     first_name = forms.CharField(
         max_length=Profile.FIRST_NAME_MAX_LENGTH,
     )
+
     last_name = forms.CharField(
         max_length=Profile.LAST_NAME_MAX_LENGTH,
     )
+
     picture = forms.URLField()
+
     date_of_birth = forms.DateField()
+
     description = forms.CharField(
         widget=forms.Textarea,
     )
+
     email = forms.EmailField()
+
     gender = forms.ChoiceField(
         choices=Profile.GENDERS,
     )
