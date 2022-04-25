@@ -126,7 +126,7 @@ LOGGING = {
     'version': 1,
     'handlers': {
         'console': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'filters': [],
             'class': 'logging.StreamHandler',
         }
